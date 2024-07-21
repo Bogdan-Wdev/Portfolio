@@ -700,12 +700,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(.625rem);
-  transform: translateX(.625rem)
+  transform: translateX(.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .item-hero__image._watcher-view {
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,-webkit-transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,-webkit-transform 1.2s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -751,9 +754,9 @@ summary {
   transform: translateX(-.625rem)
 }
 .block-text-hero-item p._watcher-view {
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,-webkit-transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,-webkit-transform 1.2s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -768,9 +771,9 @@ summary {
   transform: translateX(-.625rem)
 }
 .block-text-hero-item__title._watcher-view {
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,-webkit-transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,-webkit-transform 1.2s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -783,9 +786,9 @@ summary {
   transform: translateX(-.625rem)
 }
 .block-text-hero-item__btn._watcher-view {
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,color .3s,background-color .3s,-webkit-transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,color .3s,background-color .3s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,color .3s,background-color .3s,-webkit-transform 1.2s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -820,9 +823,9 @@ summary {
   transform: translateY(1.25rem)
 }
 .hero .tabs__item._watcher-view {
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,-webkit-transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s;
-  transition: opacity 1.8s .5s,visibility 1.2s .5s,transform 1.2s .5s,-webkit-transform 1.2s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
@@ -946,12 +949,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .rewards-hero__item:first-child._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -971,12 +977,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(.625rem);
-  transform: translateX(.625rem)
+  transform: translateX(.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .rewards-hero .item-reward__block._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1142,12 +1151,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .gallery__title._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1215,12 +1227,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(-.625rem);
-  transform: translateY(-.625rem)
+  transform: translateY(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .cards__tile:nth-child(odd)._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
@@ -1230,12 +1245,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateY(.625rem);
-  transform: translateY(.625rem)
+  transform: translateY(.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .cards__tile:nth-child(even)._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateY(0);
@@ -1307,7 +1325,10 @@ summary {
 .page__product img {
   position: absolute;
   opacity: 0;
-  visibility: hidden
+  visibility: hidden;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .page__product img:nth-child(2) {
   bottom: -.8125rem;
@@ -1322,9 +1343,9 @@ summary {
   right: -.8125rem
 }
 .page__product img._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible
 }
@@ -1393,12 +1414,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .finance__title._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1433,12 +1457,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .finance .tabs__navigation._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1809,16 +1836,19 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .trusted__title .count {
   min-width: 10rem;
   display: inline-block
 }
 .trusted__title._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1982,12 +2012,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(.625rem);
-  transform: translateX(.625rem)
+  transform: translateX(.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .sign__title._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -1999,12 +2032,15 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
-  transform: translateX(-.625rem)
+  transform: translateX(-.625rem);
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
 }
 .sign p._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -2028,9 +2064,9 @@ summary {
   transform: translateX(-.625rem)
 }
 .buttons__btn:nth-child(odd)._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,color .3s,background-color .3s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,color .3s,background-color .3s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,color .3s,background-color .3s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
@@ -2043,9 +2079,9 @@ summary {
   transform: translateX(.625rem)
 }
 .buttons__btn:nth-child(even)._watcher-view {
-  transition: opacity 1s .5s,visibility 1s .5s,color .3s,background-color .3s,-webkit-transform 1s .5s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,color .3s,background-color .3s;
-  transition: opacity 1s .5s,visibility 1s .5s,transform 1s .5s,color .3s,background-color .3s,-webkit-transform 1s .5s;
+  transition: opacity 1s .2s,visibility 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
