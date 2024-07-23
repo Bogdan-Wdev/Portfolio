@@ -786,9 +786,9 @@ summary {
   transform: translateX(-.625rem)
 }
 .block-text-hero-item__btn._watcher-view {
-  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s;
+  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,color .3s,background-color .3s,-webkit-transform 1s .2s;
   opacity: 1;
   visibility: visible;
   -webkit-transform: translateX(0);
