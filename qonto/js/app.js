@@ -630,8 +630,8 @@
         const htmlElement = document.documentElement;
         const vw = window.innerWidth;
         const vh = window.innerHeight;
-        const moveX = e.clientX / vw * 15 - 5;
-        const moveY = e.clientY / vh * 15 - 5;
+        const moveX = e.clientX / vw * 4 - 5;
+        const moveY = e.clientY / vh * 5 - 5;
         function updateTransform(element, translateX, translateY) {
             if (element) {
                 const style = window.getComputedStyle(element);

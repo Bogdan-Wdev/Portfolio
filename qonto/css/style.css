@@ -283,7 +283,7 @@ summary {
   transform: translateX(0)
 }
 .footer {
-  padding-top: 1rem
+  padding: 1rem 0
 }
 .footer__middle {
   display: flex;
@@ -312,7 +312,7 @@ summary {
 .top-footer__sidebar {
   max-width: 17.75rem;
   position: sticky;
-  top: 5.3125rem;
+  top: 5.625rem;
   align-self: flex-start
 }
 .top-footer__sidebar > :nth-child(3) {
@@ -700,10 +700,7 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(.625rem);
-  transform: translateX(.625rem);
-  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
+  transform: translateX(.625rem)
 }
 .item-hero__image._watcher-view {
   transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
@@ -1216,8 +1213,8 @@ summary {
   background-color: #ffeadd
 }
 .cards__tile:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1)
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05)
 }
 .cards__tile:hover .text-tile__title::before {
   -webkit-transform: rotate(-45deg);
@@ -1458,9 +1455,9 @@ summary {
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
   transform: translateX(-.625rem);
-  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
+  transition: opacity .3s,visibility .3s,-webkit-transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s,-webkit-transform .3s
 }
 .finance .tabs__navigation._watcher-view {
   transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
@@ -1837,9 +1834,9 @@ summary {
   visibility: hidden;
   -webkit-transform: translateX(-.625rem);
   transform: translateX(-.625rem);
-  transition: opacity 1s .2s,visibility 1s .2s,-webkit-transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s;
-  transition: opacity 1s .2s,visibility 1s .2s,transform 1s .2s,-webkit-transform 1s .2s
+  transition: opacity .3s,visibility .3s,-webkit-transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s,-webkit-transform .3s
 }
 .trusted__title .count {
   min-width: 10rem;
@@ -1888,7 +1885,10 @@ summary {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: translateX(.625rem);
-  transform: translateX(.625rem)
+  transform: translateX(.625rem);
+  transition: opacity .3s,visibility .3s,-webkit-transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s;
+  transition: opacity .3s,visibility .3s,transform .3s,-webkit-transform .3s
 }
 .cards__item._watcher-view {
   transition: opacity 1s .5s,visibility 1s .5s,-webkit-transform .3s;
@@ -1910,10 +1910,6 @@ summary {
   border-radius: .375rem;
   border: solid .0625rem var(--bg-black-soft);
   transition: all .3s
-}
-.cards__item:hover._watcher-view {
-  -webkit-transform: translate(.9375rem,.9375rem);
-  transform: translate(.9375rem,.9375rem)
 }
 .cards__item:hover::before {
   -webkit-transform: translate(-.875rem,-.875rem);
@@ -2228,7 +2224,8 @@ summary {
     font-size: 1.75rem;
     border: solid .0625rem var(--bg-grey);
     border-radius: .375rem;
-    padding-left: .625rem
+    padding-left: .625rem;
+    margin-bottom: 0
   }
   .spollers__title::before {
     content: "";
@@ -2255,10 +2252,10 @@ summary {
     display: flex;
     flex-wrap: wrap;
     gap: .9375rem;
-    justify-content: space-between
+    justify-content: flex-end;
+    padding-top: 1.125rem
   }
   .body-spollers__item {
-    font-size: 1.25rem;
     border: solid 1px var(--bg-grey);
     padding: .3125rem;
     border-radius: .375rem
