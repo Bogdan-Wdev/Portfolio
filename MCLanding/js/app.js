@@ -567,7 +567,7 @@
         const gap = .5 * remInPixels;
         const menuItems = menuList.innerHTML;
         menuList.innerHTML += menuItems;
-        const scrollSpeed = 1.5;
+        const scrollSpeed = .5;
         let scrollPosition = 0;
         let isPaused = false;
         let isInViewport = false;
@@ -592,6 +592,15 @@
             isPaused = false;
         }));
         marquee();
+    }));
+    document.getElementById("instructors-btn").addEventListener("click", (function(e) {
+        e.preventDefault();
+        const formElement = document.getElementById("registration-form");
+        const offset = formElement.getBoundingClientRect().top + window.pageYOffset - 230;
+        window.scrollTo({
+            top: offset,
+            behavior: "smooth"
+        });
     }));
     window["FLS"] = true;
     spollers();
