@@ -666,7 +666,9 @@ body::after {
 }
 .body-skills__img {
   position: relative;
-  flex: 0 0 27.5rem
+  flex: 0 0 27.5rem;
+  opacity: 0;
+  visibility: hidden
 }
 .body-skills__img img {
   position: absolute;
@@ -678,6 +680,11 @@ body::after {
   object-fit: cover;
   -o-object-position: center;
   object-position: center
+}
+.body-skills__img._watcher-view {
+  transition: opacity 1.2s .3s,visibility 1.2s .3s;
+  opacity: 1;
+  visibility: visible
 }
 .body-skills__item {
   display: grid;
@@ -782,7 +789,14 @@ body::after {
   transform: translateY(-50%)
 }
 .page__trusted {
-  background-color: #fef2f2
+  background-color: #fef2f2;
+  opacity: 0;
+  visibility: hidden
+}
+.page__trusted._watcher-view {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.2s .3s,visibility 1.2s .3s
 }
 .trusted__title {
   font-size: 1.25rem;
@@ -792,26 +806,10 @@ body::after {
   margin-bottom: 1.25rem
 }
 .trusted__menu {
+  -webkit-mask-image: linear-gradient(to right,rgba(0,0,0,0),#000 20%,#000 80%,rgba(0,0,0,0));
+  mask-image: linear-gradient(to right,rgba(0,0,0,0),#000 20%,#000 80%,rgba(0,0,0,0));
   overflow: hidden;
   position: relative
-}
-.trusted__menu::after,
-.trusted__menu::before {
-  content: "";
-  position: absolute;
-  width: 3.125rem;
-  height: 3.125rem;
-  top: 0;
-  z-index: 1;
-  border-radius: 50%;
-  background: #fef2f2;
-  background: radial-gradient(circle,#fef2f2 48%,rgba(254,242,242,.7427345938) 88%)
-}
-.trusted__menu::before {
-  left: -2.5rem
-}
-.trusted__menu::after {
-  right: -2.5rem
 }
 .trusted__menu .menu__list {
   margin-right: 0;
@@ -1134,10 +1132,7 @@ body::after {
     gap: 1.25rem
   }
   .page__trusted {
-    padding-top: 6.25rem
-  }
-  .page__trusted {
-    padding-bottom: 6.25rem
+    padding-block: 6.25rem
   }
   .page__trusted {
     margin-bottom: 6.25rem
@@ -1229,10 +1224,7 @@ body::after {
     gap: .625rem
   }
   .page__trusted {
-    padding-top: 3.125rem
-  }
-  .page__trusted {
-    padding-bottom: 3.125rem
+    padding-block: 3.125rem
   }
   .page__trusted {
     margin-bottom: 3.125rem
@@ -1696,24 +1688,14 @@ body::after {
       gap: calc(.625rem + .625 * (100vw - 20rem)/ 55.625)
     }
   }
-  @supports (padding-top:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
+  @supports (padding-block:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
     .page__trusted {
-      padding-top: clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)
+      padding-block: clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)
     }
   }
-  @supports not (padding-top:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
+  @supports not (padding-block:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
     .page__trusted {
-      padding-top: calc(3.125rem + 3.125 * (100vw - 20rem)/ 55.625)
-    }
-  }
-  @supports (padding-bottom:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
-    .page__trusted {
-      padding-bottom: clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)
-    }
-  }
-  @supports not (padding-bottom:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
-    .page__trusted {
-      padding-bottom: calc(3.125rem + 3.125 * (100vw - 20rem)/ 55.625)
+      padding-block: calc(3.125rem + 3.125 * (100vw - 20rem)/ 55.625)
     }
   }
   @supports (margin-bottom:clamp(3.125rem ,2.0014044944rem + 5.6179775281vw ,6.25rem)) {
