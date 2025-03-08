@@ -710,7 +710,8 @@ h6 {
 }
 .tabs__title {
   padding: .75rem 2rem;
-  font-size: 1.5rem
+  font-size: 1.5rem;
+  background-color: var(--bg-light-grey-085)
 }
 .tabs__title._tab-active {
   color: var(--text-green);
