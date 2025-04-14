@@ -101,7 +101,6 @@
             lockPaddingElements.forEach((lockPaddingElement => {
                 lockPaddingElement.style.paddingRight = lockPaddingValue;
             }));
-            document.body.style.paddingRight = lockPaddingValue;
             document.documentElement.classList.add("lock");
             bodyLockStatus = false;
             setTimeout((function() {

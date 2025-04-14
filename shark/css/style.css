@@ -590,10 +590,9 @@ body::after {
   }
 }
 .page__testimonials {
-  background-color: #18181b;
+  background: url(../img/testimonials/Divider.svg) no-repeat bottom center/100% auto #18181b;
   color: var(--text-white);
   padding: 5rem 0 8.75rem;
-  clip-path: polygon(0 0,100% 0,100% 20%,100% 94%,36% 98%,30% 98%,0 95%,0 20%);
   opacity: 0
 }
 .page__testimonials._watcher-view {
