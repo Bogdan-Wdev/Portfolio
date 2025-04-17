@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250416201832">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250417183940">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +43,7 @@
 							</ul>
 						</nav>
 						<div class="header__buttons">
-							<button class="header__button btn">
+							<button aria-label="cart" class="header__button btn">
 								<svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M14.0703 12.642C13.2498 12.642 12.642 13.3106 12.642 14.1007C12.642 14.9212 13.2802 15.5594 14.0703 15.5594C14.8301 15.5594 15.4986 14.9212 15.4986 14.1007C15.4986 13.3106 14.8908 12.642 14.0703 12.642ZM5.31815 12.642C4.49764 12.642 3.88985 13.3106 3.88985 14.1007C3.88985 14.9212 4.52803 15.5594 5.31815 15.5594C6.07789 15.5594 6.74646 14.9212 6.74646 14.1007C6.74646 13.3106 6.13867 12.642 5.31815 12.642ZM17.2916 1.36753C17.1093 1.12441 16.8358 0.972462 16.5015 0.972462H3.67712L3.61634 0.607789C3.55557 0.273505 3.25167 0 2.91739 0H0.698957C0.303894 0 0 0.334284 0 0.729347C0 1.09402 0.303894 1.45869 0.698957 1.45869H2.27921L4.10258 11.0921C4.19374 11.4264 4.49764 11.6695 4.86231 11.6695H14.8301C15.2251 11.6695 15.5594 11.3657 15.5594 10.9706C15.5594 10.5451 15.2251 10.2109 14.8301 10.2109H5.43971L5.16621 8.75216H14.8604C15.2859 8.75216 15.6506 8.47866 15.7721 8.0532L17.4435 2.24882C17.5347 1.94492 17.4739 1.61064 17.2916 1.36753Z" fill="white" />
 								</svg>
@@ -81,8 +81,8 @@
 							<div data-watch class="card__text text">
 								<div class="text__wrapper">
 									<h5 data-watch class="text__subtitle">NEW COLLECTION</h5>
-									<h2 data-watch class="text__title">Decor & Wellness</h1>
-										<button data-watch class="text__btn btn">Show more</button>
+									<h2 data-watch class="text__title">Decor & Wellness</h2>
+									<button data-watch class="text__btn btn">Show more</button>
 								</div>
 							</div>
 							<div data-watch class="card__image">
@@ -410,7 +410,7 @@
 					</svg>
 				</button>
 				<div class="popup__text">
-					<h2 class="popup__title">Purchase</h2>
+					<h2 id="form-title" class="popup__title">Purchase</h2>
 					<form class="popup__form form-popup" method="post" action="/submit-form" aria-labelledby="form-title">
 						<label for="email" class="form-popup__label">Your Email:</label>
 						<input type="email" id="email" name="email" class="form-popup__input" required aria-required="true">
@@ -424,7 +424,134 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20250416201832"></script>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<!-- Скріпт прелоадера -->
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+				<style>
+					* {
+						padding: 0px;
+						margin: 0px;
+						border: 0px;
+						box-sizing: border-box;
+					}
+					/* Головний блок */
+					.fls-preloader{
+						pointer-events: none;
+						z-index: -1;
+						position: fixed;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						display: flex;
+						justify-content:center;
+						align-items: center;
+					}
+					/* Блок з елементами */
+					.fls-preloader__body{
+						padding: 0.93rem;
+						max-width: 31.25rem;
+						display: flex;
+						flex-direction: column;
+					}
+					/* Блок з лічильником */
+					.fls-preloader__counter{
+						font-size: 10rem;
+					}
+					/* Прогресбар */
+					.fls-preloader__line{}
+					/* Лінія прогресбару */
+					.fls-preloader__line span{
+						display: inline-block;
+						transition: width 0.2s ease;
+						height: 0.8rem;
+						background-color: #7A956B;
+					}
+					.lock body{
+						overflow: hidden;
+						touch-action: none;
+						overscroll-behavior: none;
+					}
+					.loading body>*:not(.fls-preloader){
+						opacity: 0;
+						visibility: hidden;
+					}
+					.loaded body>*:not(.fls-preloader){
+						transition: opacity 0.5s ease 0s;
+						opacity: 1;
+						visibility: visible;
+					}
+				</style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+					<div class="fls-preloader">
+						<div class="fls-preloader__body">
+							<div class="fls-preloader__counter">0%</div>
+							<div class="fls-preloader__line"><span></span></div>
+						</div>
+					</div>`;
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const
+						preloader = document.querySelector('.fls-preloader'),
+						showPecentLoad = document.querySelector('.fls-preloader__counter'),
+						showLineLoad = document.querySelector('.fls-preloader__line span'),
+						htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = counter = progress = 0;
+
+					htmlDocument.classList.add('loading');
+					htmlDocument.classList.add('lock');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							preloaderImage.dataset.src ? imgClone.src = preloaderImage.dataset.src : imgClone.src = preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						showPecentLoad ? showPecentLoad.innerText = `${progress}%` : null;
+						showLineLoad ? showLineLoad.style.width = `${progress}%` : null;
+					}
+					showPecentLoad ? setValueProgress(progress) : null;
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+						const intervalId = setInterval(() => {
+							counter >= progress ? clearInterval(intervalId) : setValueProgress(++counter);
+							counter >= 100 ? addLoadedClass() : null;
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('lock');
+						htmlDocument.classList.remove('loading');
+						setInterval(() => {
+							preloader.remove();
+							preloaderContainer.remove();
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+				}
+			}
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20250417183940"></script>
 </body>
 
 </html>
