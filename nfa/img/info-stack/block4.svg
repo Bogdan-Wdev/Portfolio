@@ -1,0 +1,21 @@
+<svg width="322" height="237" viewBox="0 0 322 237" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g style="mix-blend-mode:multiply" filter="url(#filter0_f_3331_5)">
+<path d="M181.673 200.475C248.174 185.891 296.876 150.323 290.452 121.034C284.029 91.7442 224.912 79.8234 158.411 94.4081C91.91 108.993 43.2079 144.56 49.6316 173.849C56.0552 203.139 115.172 215.06 181.673 200.475Z" fill="url(#paint0_radial_3331_5)" fill-opacity="0.4" style="mix-blend-mode:multiply"/>
+</g>
+<path d="M259.394 117.228L129.87 192V149.618L259.394 74.8457V117.228Z" fill="#C2ADF9"/>
+<path d="M129.871 192L0.359741 117.228V74.8337L129.871 149.618V192Z" fill="#C6B4F5"/>
+<path d="M129.87 149.618L0.346558 74.8461L129.858 0.0617676L259.381 74.8461L129.87 149.618Z" fill="#D5C6FD"/>
+<path d="M37.0488 115.848C37.0488 108.16 40.7449 105.931 45.6731 108.789C50.6012 111.647 54.2973 118.14 54.2973 125.828C54.2973 133.516 50.6012 135.758 45.6731 132.887C40.7449 130.017 37.0488 123.536 37.0488 115.848ZM49.6402 123.117C49.6402 117.82 48.0262 114.703 45.6854 113.347C43.3445 111.992 41.7675 113.347 41.7675 118.571C41.7675 123.795 43.3815 126.998 45.6854 128.329C47.9893 129.659 49.6402 128.403 49.6402 123.117Z" fill="white"/>
+<path d="M75.8088 144.974L72.5192 143.076V148.004L68.0346 145.343V140.415L57.1681 134.144V130.522L66.6794 121.232L71.6075 124.066L62.7985 132.974L68.2071 136.103V131.754L72.6178 134.292V138.653L75.9073 140.551L75.8088 144.974Z" fill="white"/>
+<defs>
+<filter id="filter0_f_3331_5" x="19.0625" y="58.1838" width="301.959" height="178.516" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="15" result="effect1_foregroundBlur_3331_5"/>
+</filter>
+<radialGradient id="paint0_radial_3331_5" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(170.056 147.54) rotate(-12.37) scale(91.8464 46.8417)">
+<stop/>
+<stop offset="1" stop-color="white"/>
+</radialGradient>
+</defs>
+</svg>
