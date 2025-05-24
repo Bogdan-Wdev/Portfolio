@@ -6668,6 +6668,32 @@
     setTimeout((() => {
         if (!ScrollSmoother.get()) initScrollSmoother();
     }), 2e3);
+    document.querySelectorAll(".menu__link").forEach((link => {
+        const split = new SplitText(link, {
+            type: "chars",
+            absolute: true
+        });
+        const chars = split.chars;
+        gsapWithCSS.set(chars, {
+            scale: 1,
+            transformOrigin: "center center"
+        });
+        const tl = gsapWithCSS.timeline({
+            paused: true
+        }).to(chars, {
+            scale: 1.5,
+            duration: .3,
+            ease: "power1.inOut",
+            stagger: {
+                each: .05,
+                from: "center"
+            },
+            yoyo: true,
+            repeat: 1
+        });
+        link.addEventListener("mouseenter", (() => tl.restart()));
+        link.addEventListener("mouseleave", (() => tl.pause(0)));
+    }));
     window["FLS"] = false;
     menuInit();
 })();
