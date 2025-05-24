@@ -6655,39 +6655,19 @@
         });
     }));
     gsapWithCSS.registerPlugin(ScrollTrigger_ScrollTrigger, ScrollSmoother);
-    ScrollSmoother.create({
-        wrapper: ".wrapper",
-        content: ".page",
-        smooth: 1.5,
-        effects: true,
-        normalizeScroll: true
-    });
-    document.querySelectorAll(".menu__link").forEach((link => {
-        const split = new SplitText(link, {
-            type: "chars",
-            absolute: true
+    function initScrollSmoother() {
+        ScrollSmoother.create({
+            wrapper: ".wrapper",
+            content: ".page",
+            smooth: 1.5,
+            effects: true,
+            normalizeScroll: true
         });
-        const chars = split.chars;
-        gsapWithCSS.set(chars, {
-            scale: 1,
-            transformOrigin: "center center"
-        });
-        const tl = gsapWithCSS.timeline({
-            paused: true
-        }).to(chars, {
-            scale: 1.5,
-            duration: .3,
-            ease: "power1.inOut",
-            stagger: {
-                each: .05,
-                from: "center"
-            },
-            yoyo: true,
-            repeat: 1
-        });
-        link.addEventListener("mouseenter", (() => tl.restart()));
-        link.addEventListener("mouseleave", (() => tl.pause(0)));
-    }));
+    }
+    window.addEventListener("preloaderComplete", initScrollSmoother);
+    setTimeout((() => {
+        if (!ScrollSmoother.get()) initScrollSmoother();
+    }), 2e3);
     window["FLS"] = false;
     menuInit();
 })();
