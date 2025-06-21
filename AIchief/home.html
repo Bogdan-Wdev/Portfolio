@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250621144820">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__block">
+					<div class="header__logo logo">
+						<svg width="74" height="50" viewBox="0 0 74 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#213D34" />
+							<path d="M61.3636 0H73.4849V50H61.3636V0Z" fill="#213D34" />
+						</svg>
+
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu" aria-label="open menu"><span></span></button>
+						<nav class="menu__body">
+							<div class="menu__wrapper">
+								<ul class="menu__list">
+									<li class="menu__item menu__item_active"><a href="#" class="menu__link">Home</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Customer Support</a></li>
+
+								</ul>
+							</div>
+						</nav>
+						<div data-da=".menu__wrapper,580,2" class="header__buttons">
+							<button class="header__button btn">Log In</button>
+							<button class="header__button btn">Start For Free</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="scrollsmoother-content">
+			<main class="page">
+				<section class="info-block">
+					<div class="info-block__container">
+						<div class="info-block__wrapper">
+							<h1 class="info-block__title title">Elevate Your Mealtime with AI-Powered Personalization
+							</h1>
+							<p>Effortless Planning, Healthier Eating</p>
+							<div class="info-block__cards">
+								<article data-watch class="info-block__card card">
+									<div class="card__count">95%</div>
+									<p>Improved Eating Habits</p>
+									<div class="card__image"><img src="img/info-block/image1.webp" alt="image"></div>
+								</article>
+								<article data-watch class="info-block__card card">
+
+									<div class="card__image"><img src="img/info-block/image2.webp" alt="image"></div>
+								</article>
+								<article data-watch class="info-block__card card">
+									<div class="card__buttons">
+										<button class="card__button btn">Try Our Demo</button>
+										<button class="card__button btn">Start For Free</button>
+									</div>
+									<div class="card__item">
+										<div class="card__count">30 000 +</div>
+										<p>Happy Users</p>
+									</div>
+								</article>
+								<article data-watch class="info-block__card card">
+									<div class="card__image"><img src="img/info-block/image3.webp" alt="image"></div>
+									<div class="card__count">25%</div>
+									<p>Saved on Groceries</p>
+
+								</article>
+								<article data-watch class="info-block__card card">
+
+									<div class="card__image"><img src="img/info-block/image4.webp" alt="image"></div>
+								</article>
+							</div>
+							<div class="info-block__decor"><svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<circle cx="33" cy="33" r="33" fill="#D9EF78" />
+									<rect x="12" y="12" width="41" height="41" fill="url(#pattern0_2_68)" />
+									<defs>
+										<pattern id="pattern0_2_68" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#image0_2_68" transform="scale(0.0104167)" />
+										</pattern>
+										<image id="image0_2_68" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+									</defs>
+								</svg></div>
+							<div class="info-block__decor"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<rect x="9.84848" y="9.84863" width="31.0606" height="31.0606" fill="url(#pattern0_2_65)" />
+									<circle cx="25" cy="25" r="24.25" stroke="black" stroke-width="1.5" />
+									<defs>
+										<pattern id="pattern0_2_65" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#image0_2_65" transform="scale(0.0104167)" />
+										</pattern>
+										<image id="image0_2_65" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAHQklEQVR4nO2dCWxVRRSGf2ihiAUVUUFDo6jRuMRIUYtYCIgxbq1BYzVKLSCiuOCSugSCjQZFkbgkRjFqhGhcgaho3IIxIKJxQ2JcAa1SLZuIUimtvWbMecnN8cx9795313nzJZOQ8N7cmX/uOzNzzpkpYLFYLBaLJceFALYA2ASgDsUzHsBaKrUh1Gc0vUh8h8puEjAoZ1MdufrWh9hWY2l3CabKNgBDA9RzDhNfld8iaK+RJugfJtwSn3WcK4jfA6AxojYbxy2CeCcWKf5VEbfZKHoD+ICJuKiA750HoFMQf3oMbTaOCUzIHQAqPD5fpxH/yhjbbNyK6CcmaG2Bq52c+DNibrNxPM1EnSl85nzhzVeT+BUJtNc4ZjNhHyxgqane/KsTaq9xXMzEfdb1fxMB7BHe/CkJttfIPYHjKos9xLdLTaIMwBgAcwEsB/A5uQA+ow3VzQBG0efycSkT+UkAF2je/CaUOBUAbgKwkYmjKz/ShmuQR53Xsu98rRH/cpQ4Y+ktdwKUvwDcDqCPUO+jeb7bbd0L+O8t7g4ovrusA3AqG4CVecSfhBLnPo04OwEsBNAAYCSAagCn0MboOQC/e4iqzJiiL9WjG4Cv6BmqPAPgAQDXAxhN3zWe2zQCKiEG5vnuAJqMf9GIu5hcC0F/TTuojhEwlCm07OOdVv4bP/QDsEBwPzvCBitoWRIwnpBa6gB0sU5uB3BCkZN4oaunIEW173QYQA2ADta5XWR3i2UwgI/yCLmH9hXKvDSTp/MiAJeR22IRLW8dzS8qjBhzYgylQLm7Uz000YZFJYC3NHPL5ALmlhwqjrxKqKcVGaWvECBR5Z6InvWSZmL2G9RpZvNLZgfgMUGQFQW6E4IOgvRLyC1R/aD8Rj+T+Gchg0wThNgM4OCIn1spzAldwmbNaGo0/va43qTBwuponcZtYRz7AtggvP1q9xsnowVXx60ogXjsMkH8NQm9fQsEB56XFzXzzBTEV36Z4Qm1Zy9hCaxWOEYyUuMGSDrg0czaozZc5TCMfQD8IIi/NOmG0SaMe1HVIsEoXhDE/5VWI2lsn/KoGkOTIH6cS85CmFFk0m5qGa4JfjyCdDGKte8TGEA5gNWC+N8A6I90MUJoY+a5Q+P2VauhtFHN2vkpMk6NEFxxyLceFvXkCNtI/y42Eudu5yvIMAM0S87VIXs525gzrZj4wVOsrXcio5Rp/Pt/Ajg85Ge1Ch7NIIMwhKJv7rrCiMQlwkRBfAfA1AieVS+YuSCD8DCrY0OE8YhI2Z+ZBce15lfZyFHQUOQg1AuZEyoHKJNI4T4nJBsdxSBUk2l0f++7rCZfNXqI71DppiyDqNLNu3w8r1Gw+11Ztf1VlDzFBX85JBsd5i9hIKUwOiHFhROnNwXReWfeoOBLsTbaL17PO9kj0/peZJQbhM60ATjQ9Zm0DALP/8+VOcgoR2rs6Fjhs2kYBF7U6uc6ZBRlet4XOuXlR2+IeRDmeYj/d4RL41jgR3xUeZHsPgIMQrG+HM41HianndzPmeUwYf38LfmACqFBGITWEM+TPZHn8IVqf2ZRb/i7rFNqHjjeZz0NbBDUxB1Gkq/kh3J7OFVsOtNI6YTKHAWhnlzJrSGkd5/kcSqmm07d5DOPmfD1bGWdW5GCjk2mSVUSX91kNQ6GwDOZ1TxwaILt6QfgcQ+TsyqGRN9YY6ZpyqMcRumMOvEXZtWpJqFMzIeC19DrkqMoGSdcwOf+VUa1r0jUxvKOnpnQ5m+O5uRjLr38aBiYSt6egnTCgwC8qRG+h6JaKtHWOHi4riOBjcwETaQtt8pRtxkaybHCjjVOz2EfAC0eJmdpinJLI+E91uH1tPSLg6PoHiBJ+A7NHW9GcYnQ8bgOI0+lkyqS+Go1dgQMp0I4w/V6DM8dojm+5JApbDHx4EQhx4g6KfgSJZPoMm1J/O9NPDChYyCd1XULoFZCUeVqHgLgNQ8n2nxTl5c67mIi7GTx3bByNXtRQqzugqUvycNZUhwgTH4qxTzsXM0qj01VJz3TGD+OH+4WNjnqWH9YuZr9KT2dR9NyRV0fcBxKlP0A/MEEuTFAPbqY7/0eAZNdFMzPZEJsVKdZtvh8+/OlCTqaspI2XSXN3sISsFhf/6w8wrdTeDPpaFoqmM7E2eYjw0Hyns4Trn13T7IPmRAcD5O1TCR1N3MQX/00YQ/hMHOjIlkWF7XChDksQB06x5lDZ8PGl4obodjDaX6CLSou8Lxwz6dDZRO5GKyd11AmmIwzCrTz8z0uQN1N80DQeaRkGMOE25rHTFTS6kjnNFPlHQDHxNiHTDO3wL+nVUWf3Z4n5zJNl29kguVMRPef4yunzIdlea6Qb6NbZu0EG4A1wvHMJvoleJmZ3F5hFm3iLAF5u0B3ARd+to+rfi0etPgQ/gvaaNk3PkQGUbhPJ/pmOuxwWpgPtfx/EFrIHH0M4FVa8dSWunvYYrFYLBaLxWKxWOCTfwFQALG8+G0EygAAAABJRU5ErkJggg==" />
+									</defs>
+								</svg></div>
+							<div class="info-block__decor"><svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<circle cx="31.0001" cy="30.9999" r="25" transform="rotate(14.7303 31.0001 30.9999)" fill="#213D34" />
+									<rect x="20.307" y="12.6787" width="30" height="30" transform="rotate(14.7303 20.307 12.6787)" fill="url(#pattern0_11_439)" />
+									<defs>
+										<pattern id="pattern0_11_439" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#image0_11_439" transform="scale(0.01)" />
+										</pattern>
+										<image id="image0_11_439" width="100" height="100" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+									</defs>
+								</svg></div>
+							<div class="info-block__decor"><svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<circle cx="41.707" cy="41.707" r="41.707" fill="white" />
+									<rect x="15.1662" y="15.166" width="51.8178" height="51.8178" fill="url(#pattern0_2_71)" />
+									<defs>
+										<pattern id="pattern0_2_71" patternContentUnits="objectBoundingBox" width="1" height="1">
+											<use xlink:href="#image0_2_71" transform="scale(0.0104167)" />
+										</pattern>
+										<image id="image0_2_71" width="96" height="96" preserveAspectRatio="none" xlink:href="data:image/png;base64,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" />
+									</defs>
+								</svg></div>
+						</div>
+					</div>
+
+
+				</section>
+				<section class="feature-block">
+					<div class="feature-block__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Demo</h2>
+							<div class="section__description">See how it works: your personalized meal planning
+								journey
+							</div>
+						</div>
+
+						<div class="feature-block__content">
+							<div class="feature-block__media video-lazyload">
+								<img class="video-preview" src="img/featured/video.webp" alt="Превью видео">
+
+								<div class="video-play-button"><svg width="83" height="84" viewBox="0 0 83 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M41.2123 83.0271C63.9732 83.0271 82.4246 64.5757 82.4246 41.8148C82.4246 19.0539 63.9732 0.602539 41.2123 0.602539C18.4514 0.602539 0 19.0539 0 41.8148C0 64.5757 18.4514 83.0271 41.2123 83.0271ZM32.4476 55.6175L58.3842 41.242L32.4476 26.8665V55.6175Z" fill="white" />
+									</svg></div>
+								<iframe class="video-iframe" width="560" height="315" src="https://www.youtube.com/embed/3DM3_ocFy0U?si=o0DcEJ5AsbxlFHIX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+							</div>
+							<div class="feature-block__info">
+								<div class="feature-block__info-text">
+									Every meal is a chance to nourish your body, inspire your mind, and feed your soul.
+								</div>
+							</div>
+						</div>
+				</section>
+				<section class="carousel">
+					<div class="carousel__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">How it works</h2>
+							<div class="section__description">Step into the world of hassle-free meal planning with our
+								easy
+								3-step process
+							</div>
+						</div>
+						<div data-watch class="carousel__sliders">
+							<div class="text__slider swiper">
+								<div class="text__wrapper swiper-wrapper">
+									<div class="text__slide text swiper-slide">
+										<div class="text__title">Personalize Your Profile</div>
+										<p>Begin by creating your profile. Tell us about your dietary preferences,
+											nutritional
+											goals, and budget. Our AI technology tailors every meal plan to fit your
+											unique
+											needs.</p>
+									</div>
+									<div class="text__slide text swiper-slide">
+										<div class="text__title">Personalize </div>
+										<p>Begin by creating your profile. Tell us about your dietary preferences,
+											nutritional
+											goals, and budget. </p>
+									</div>
+									<div class="text__slide text swiper-slide">
+										<div class="text__title"> Your Profile</div>
+										<p>Begin by creating your profile. Tell us about your dietary preferences,
+											nutritional
+											goals, plan to fit your unique
+											needs.</p>
+									</div>
+
+								</div>
+								<div class="swiper-pagination"></div>
+								<button type="button" class="swiper-button-prev">
+									<img src="img/spollers/arrow.svg" alt="">
+								</button>
+								<button type="button" class="swiper-button-next">
+									<img src="img/spollers/arrow.svg" alt="">
+								</button>
+							</div>
+							<div class="image__slider swiper">
+								<div class="image__wrapper swiper-wrapper">
+									<div class="image__slide swiper-slide">
+										<div class="image__body">
+											<img src="img/sliders/girl.webp" alt="girl">
+										</div>
+									</div>
+									<div class="image__slide swiper-slide">
+										<div class="image__body">
+											<img src="img/sliders/plate.webp" alt="girl">
+										</div>
+									</div>
+									<div class="image__slide swiper-slide">
+										<div class="image__body">
+											<img src="img/sliders/food.webp" alt="girl">
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</section>
+				<section class="benefits">
+					<div class="benefits__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Benefits</h2>
+							<div class="section__description">Get meal plans tailored to your unique dietary needs,
+								preferences, and goals, ensuring a balanced and enjoyable diet.
+							</div>
+						</div>
+						<div class="benefits__cards">
+							<article data-watch class="benefits__card card card_big">
+								<div class="card__text">
+									<h3 class="card__title">Personalized Nutrition</h3>
+									<p class="card__description">Get meal plans tailored to your unique dietary needs,
+										preferences, and goals, ensuring a balanced and enjoyable diet.</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card card_big">
+								<div class="card__image">
+									<img src="img/benefit/image1.webp" alt="bread">
+								</div>
+							</article>
+							<article data-watch class="benefits__card card">
+								<div class="card__text">
+									<h3 class="card__title">Time-Saving Convenience</h3>
+									<p class="card__description">Say goodbye to meal planning stress. Our AI-driven
+										platform
+										simplifies your weekly meal preparation, saving you valuable time.</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card card_big">
+								<div class="card__text">
+									<h3 class="card__title">Healthier Eating Habits</h3>
+									<p class="card__description">Easily adopt a healthier lifestyle with nutrient-rich
+										meal
+										plans and educational content on nutrition and wellness.</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card">
+								<div class="card__text">
+									<h3 class="card__title">Cost-Effective Shopping</h3>
+									<p class="card__description">Reduce food waste and save money with efficient grocery
+										shopping lists that align perfectly with your meal plans.</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card">
+								<div class="card__text">
+									<h3 class="card__title">Seamless Grocery Delivery</h3>
+									<p class="card__description">Enjoy the convenience of having all your meal
+										ingredients
+										delivered right to your doorstep through our local grocery store partnerships.
+									</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card card_big">
+								<div class="card__text">
+									<h3 class="card__title">Community Support</h3>
+									<p class="card__description">Join a community of like-minded individuals, share
+										experiences, recipes, and tips, and get motivated on your journey to healthier
+										eating.</p>
+								</div>
+							</article>
+							<article data-watch class="benefits__card card card_small">
+								<div class="card__image">
+									<img src="img/benefit/image2.webp" alt="vegan">
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="recipes">
+					<div class="recipes__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Recipes</h2>
+							<div class="section__description">Recipes crafted by AI, personalized to perfectly align
+								with
+								your unique dietary needs and flavor preferences
+							</div>
+						</div>
+						<div class="recipes__items">
+							<div class="recipes__tiles">
+								<article data-watch class="recipes__tile tile">
+									<div class="tile__content">
+										<h3 class="tile__title">Savory Quinoa and Roasted Vegetable Bowl</h3>
+										<button class="tile__btn btn">Learn More</button>
+									</div>
+									<div class="tile__image">
+										<img src="img/recipes/plate1.webp" alt="plate">
+									</div>
+								</article>
+								<article data-watch class="recipes__tile tile">
+									<div class="tile__content">
+										<h3 class="tile__title">Herb-Infused Grilled Chicken with Seasonal Greens</h3>
+										<button class="tile__btn btn">Learn More</button>
+									</div>
+									<div class="tile__image"><img src="img/recipes/plate2.webp" alt="plate"></div>
+								</article>
+								<article data-watch class="recipes__tile tile">
+									<div class="tile__content">
+										<h3 class="tile__title">Mediterranean Lentil and Kale Salad</h3>
+										<button class="tile__btn btn">Learn More</button>
+									</div>
+									<div class="tile__image"><img src="img/recipes/plate3.webp" alt="plate"></div>
+								</article>
+							</div>
+							<a data-watch href="#" class="recipes__cta cta">
+								<div class="cta__wrapper">
+									<div class="cta__text">Explore more recipes</div>
+									<div class="cta__decor"></div>
+								</div>
+								<div class="cta__image">
+									<img src="img/recipes/cta-image.webp" alt="image">
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="testimonials">
+					<div class="testimonials__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Testimonials</h2>
+							<div class="section__description">Real stories from satisfied users: see how our platform
+								changes lives
+							</div>
+						</div>
+						<div class="testimonials__cards">
+							<article data-watch class="testimonials__card card">
+								<div class="card__text">Since using AIChefMate, I've rediscovered my love for cooking!
+									The
+									meal plans are easy and delicious. It's been a game-changer for my busy lifestyle.
+								</div>
+								<div class="card__client-info client-info">
+									<div class="client-info__image">
+										<img src="img/testimonials/emily.webp" alt="emily">
+									</div>
+									<div class="client-info__text">Emily R.</div>
+								</div>
+							</article>
+							<article data-watch class="testimonials__card card">
+								<div class="card__text">I never knew healthy eating could be this simple and satisfying.
+									Thanks to AIChefMate, my family enjoys diverse, nutritious meals every day.</div>
+								<div class="card__client-info client-info">
+									<div class="client-info__image">
+										<img src="img/testimonials/mark.webp" alt="mark">
+									</div>
+									<div class="client-info__text">Mark T.</div>
+								</div>
+							</article>
+							<article data-watch class="testimonials__card card">
+								<div class="card__text">The grocery savings have been incredible! Plus, every meal feels
+									tailored just for me. I'm eating better and feeling great. A big thumbs up!</div>
+								<div class="card__client-info client-info">
+									<div class="client-info__image">
+										<img src="img/testimonials/sarah.webp" alt="sarah">
+									</div>
+									<div class="client-info__text">Sarah J.</div>
+								</div>
+							</article>
+							<article data-watch class="testimonials__card card">
+								<div class="card__text">Switching to AIChefMate has been a revelation for my meal prep
+									routine. The AI-generated plans are spot-on with my tastes and nutritional needs,
+									making
+									healthy eating effortless and enjoyable.</div>
+								<div class="card__client-info client-info">
+									<div class="client-info__image">
+										<img src="img/testimonials/rebeca.webp" alt="rebeca">
+									</div>
+									<div class="client-info__text">Rebecca S.</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="insights">
+					<div class="insights__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Healthy Insights</h2>
+							<div class="section__description">Latest News, Expert Blogs, and Nutritional Learning
+							</div>
+						</div>
+						<div class="insights__cards">
+							<article data-watch class="insights__card card">
+								<div class="card__image"><img src="img/insights/ins1.webp" alt="ins"></div>
+								<div class="card__content">
+									<h3 class="card__title">Mastering Meal Prep: Time-Saving Tips for Busy Weekdays</h3>
+									<button class="card__btn btn">Read Article</button>
+								</div>
+
+							</article>
+							<article data-watch class="insights__card card">
+								<div class="card__image"><img src="img/insights/ins2.webp" alt="ins"></div>
+								<div class="card__content">
+									<h3 class="card__title">The Power of Plant-Based: Benefits Beyond the Plate</h3>
+									<button class="card__btn btn">Read Article</button>
+								</div>
+
+							</article>
+							<article data-watch class="insights__card card">
+								<div class="card__image"><img src="img/insights/ins3.webp" alt="ins"></div>
+								<div class="card__content">
+									<h3 class="card__title">Balancing Nutrients: A Guide to a Well-Rounded Diet</h3>
+									<button class="card__btn btn">Read Article</button>
+								</div>
+
+							</article>
+						</div>
+					</div>
+				</section>
+				<section class="faq">
+					<div class="faq__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Frequently Asked Questions</h2>
+							<div class="section__description">Meal planning made easy: your questions, answered
+							</div>
+						</div>
+						<div data-spollers class="spollers">
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+							<details data-watch class="spollers__item">
+								<summary class="spollers__title">
+									<div class="spollers__decor"><svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.73828 1.40723L16.6133 8.28223C16.8711 8.54004 17 8.88379 17 9.22754C17 9.61426 16.8711 9.95801 16.6133 10.2158C16.0977 10.7744 15.1953 10.7744 14.6797 10.2158L10.125 5.7041L10.125 18.8525C10.125 19.626 9.52344 20.2275 8.75 20.2275C8.01953 20.2275 7.375 19.626 7.375 18.8525L7.375 5.7041L2.86328 10.2158C2.34766 10.7744 1.44531 10.7744 0.929688 10.2158C0.371094 9.7002 0.371094 8.79785 0.929688 8.28223L7.80469 1.40723C8.32031 0.848633 9.22266 0.848633 9.73828 1.40723Z" fill="#213D34" />
+										</svg></div>
+									<div class="spollers__text">How does the AI create personalized meal plans?</div>
+								</summary>
+								<div class="spollers__body">
+									<div class="spollers__text-body">Our AI system analyzes your dietary preferences,
+										health
+										goals,
+										and budget to curate meal plans that are unique to you. It continually learns
+										from
+										your
+										feedback and choices to improve its suggestions over time.</div>
+								</div>
+							</details>
+
+						</div>
+					</div>
+				</section>
+				<section class="pricing">
+					<div class="pricing__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Pricing</h2>
+							<div class="section__description">Find your perfect plan: tailored pricing for every need
+							</div>
+						</div>
+						<div class="pricing__cards">
+							<article data-watch class="pricing__card card">
+								<div class="card__top">
+									<h3 class="card__title">Free Plan</h3>
+									<div class="card__price"><span>$0</span>per month</div>
+									<ul class="card__list">
+										<li class="card__item">Basic AI meal planning</li>
+										<li class="card__item">Limited recipe access</li>
+										<li class="card__item">Manual grocery list creation </li>
+									</ul>
+								</div>
+								<div class="card__bottom">
+									<div class="card__tip"><span>Best For:</span> Those who want to explore thae
+										platform's
+										basic functionalities.</div>
+									<button class="card__btn btn">Get Started For Free</button>
+								</div>
+							</article>
+							<article data-watch class="pricing__card card card_subscribe">
+								<div class="card__top">
+									<h3 class="card__title">Standard Plan</h3>
+									<div class="card__price"><span>$9.99</span>per month</div>
+									<ul class="card__list">
+										<li class="card__item">Comprehensive AI meal planning</li>
+										<li class="card__item">Full recipe library access</li>
+										<li class="card__item">Automated grocery lists</li>
+										<li class="card__item">Grocery delivery integration</li>
+									</ul>
+								</div>
+								<div class="card__bottom">
+									<div class="card__tip"><span>Best For:</span>Individuals or families looking for
+										full
+										meal planning support and convenience.</div>
+									<button class="card__btn btn">Subscribe Now</button>
+								</div>
+							</article>
+							<article data-watch class="pricing__card card">
+								<div class="card__top">
+									<h3 class="card__title">Premium Plan</h3>
+									<div class="card__price"><span>$19.99</span>per month</div>
+									<ul class="card__list">
+										<li class="card__item">All Standard features</li>
+										<li class="card__item">Exclusive gourmet recipes</li>
+										<li class="card__item">Nutritional consultations</li>
+										<li class="card__item">Advanced customization options</li>
+									</ul>
+								</div>
+								<div class="card__bottom">
+									<div class="card__tip"><span>Best For:</span>Users seeking a premium culinary
+										experience
+										with added personalization and expert guidance.</div>
+									<button class="card__btn btn">Go Premium</button>
+								</div>
+							</article>
+						</div>
+					</div>
+				</section>
+
+				<section class="feature-block feature-block_pd-top">
+					<div class="feature-block__container">
+						<div class="section__header">
+							<h2 data-watch class="section__title title">Demo</h2>
+							<div class="section__description">See how it works: your personalized meal planning
+								journey
+							</div>
+						</div>
+
+						<div class="feature-block__content">
+							<div class="feature-block__media">
+								<img src="img/featured/featur1.webp" alt="image">
+
+							</div>
+							<div class="feature-block__info">
+								<div class="feature-block__info-text">
+									Every meal is a chance to nourish your body, inspire your mind, and feed your soul.
+								</div>
+							</div>
+						</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__block">
+						<div class="footer__logo logo">
+							<svg width="74" height="50" viewBox="0 0 74 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M50 25C50 38.8071 38.8071 50 25 50C11.1929 50 0 38.8071 0 25C0 11.1929 11.1929 0 25 0C38.8071 0 50 11.1929 50 25Z" fill="#D9EF78" />
+								<path d="M61.3636 0H73.4849V50H61.3636V0Z" fill="#D9EF78" />
+							</svg>
+
+						</div>
+						<div class="footer__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" class="menu__link">Recipes</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Customer Support</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Your Profile</a></li>
+
+								</ul>
+							</nav>
+
+						</div>
+						<p>Join us on our journey to make meal planning simple and joyful. Connect with us on social media, explore
+							our FAQs for quick answers, or drop us a line anytime.</p>
+						<div class="footer__socials socials">
+							<ul class="socials__list">
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<img src="img/socials/fb.svg" alt="fb">
+									</a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<img src="img/socials/x.svg" alt="fb">
+									</a>
+								</li>
+								<li class="socials__item">
+									<a href="#" class="socials__link">
+										<img src="img/socials/tiktok.svg" alt="fb">
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__rights">© 2064 AIChefMate. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></div>
+				</div>
+			</footer>
+		</div>
+
+	</div>
+	<!-- Документація: https://template.fls.guru/template-docs/modul-preloader.html -->
+	<div id="fls-preloader">
+		<script>
+			function preloader() {
+				const preloaderImages = document.querySelector('[data-preloader]') ? document.querySelectorAll('[data-preloader] img') : document.querySelectorAll('img');
+				const preloaderContainer = document.querySelector('#fls-preloader');
+
+				if (preloaderImages.length) {
+					const preloaderStyleTemplate = `
+                <style>
+                    * {
+                        padding: 0px;
+                        margin: 0px;
+                        border: 0px;
+                        box-sizing: border-box;
+                    }
+                    /* Главный блок */
+                    .fls-preloader {
+                        pointer-events: none;
+                        z-index: 9999;
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #fff;
+                    }
+                    /* Блок с элементами */
+                    .fls-preloader__body {
+                        padding: 0.93rem;
+                        max-width: 31.25rem;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    /* Блок с счетчиком */
+                    .fls-preloader__counter {
+                        font-size: 10rem;
+                        text-align: center;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                    /* Прогрессбар */
+                    .fls-preloader__line {
+                        margin-top: 1rem;
+                        height: 0.8rem;
+                        background-color: #e0e0e0;
+                        border-radius: 0.4rem;
+                        overflow: hidden;
+                    }
+                    /* Линия прогрессбара */
+                    .fls-preloader__line span {
+                        display: block;
+                        transition: width 0.2s ease;
+                        height: 100%;
+                        width: 0%;
+                        background-color: #7A956B;
+                        border-radius: 0.4rem;
+                    }
+                    
+                    /* Исправленные стили для предотвращения конфликтов */
+                    .loading {
+                        position: relative;
+                    }
+                    .loading body {
+                        overflow: hidden;
+                        position: fixed;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .loading body > *:not(.fls-preloader) {
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    .loaded body {
+                        overflow: hidden;
+                        position: static;
+                        width: auto;
+                        height: auto;
+                    }
+                    .loaded body > *:not(.fls-preloader) {
+                        transition: opacity 0.5s ease 0s;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                    
+                    /* Анимация исчезновения прелоадера */
+                    .fls-preloader.fade-out {
+                        opacity: 0;
+                        transition: opacity 0.5s ease;
+                    }
+                </style>`;
+
+					document.head.insertAdjacentHTML("beforeend", preloaderStyleTemplate);
+
+					const preloaderTemplate = `
+                    <div class="fls-preloader">
+                        <div class="fls-preloader__body">
+                            <div class="fls-preloader__counter">0%</div>
+                            <div class="fls-preloader__line"><span></span></div>
+                        </div>
+                    </div>`;
+
+					document.body.insertAdjacentHTML("beforeend", preloaderTemplate);
+
+					const preloader = document.querySelector('.fls-preloader');
+					const showPercentLoad = document.querySelector('.fls-preloader__counter');
+					const showLineLoad = document.querySelector('.fls-preloader__line span');
+					const htmlDocument = document.documentElement;
+
+					let imagesLoadedCount = 0;
+					let counter = 0;
+					let progress = 0;
+
+					htmlDocument.classList.add('loading');
+
+					preloaderImages.forEach(preloaderImage => {
+						const imgClone = document.createElement('img');
+						if (imgClone) {
+							imgClone.onload = imageLoaded;
+							imgClone.onerror = imageLoaded;
+							imgClone.src = preloaderImage.dataset.src || preloaderImage.src;
+						}
+					});
+
+					function setValueProgress(progress) {
+						if (showPercentLoad) showPercentLoad.innerText = `${progress}%`;
+						if (showLineLoad) showLineLoad.style.width = `${progress}%`;
+					}
+
+					setValueProgress(progress);
+
+					function imageLoaded() {
+						imagesLoadedCount++;
+						progress = Math.round((100 / preloaderImages.length) * imagesLoadedCount);
+
+						const intervalId = setInterval(() => {
+							if (counter >= progress) {
+								clearInterval(intervalId);
+							} else {
+								setValueProgress(++counter);
+							}
+
+							if (counter >= 100) {
+								addLoadedClass();
+							}
+						}, 10);
+					}
+
+					function addLoadedClass() {
+						htmlDocument.classList.add('loaded');
+						htmlDocument.classList.remove('loading');
+
+						// Плавное исчезновение прелоадера
+						preloader.classList.add('fade-out');
+
+						// Даем время для инициализации GSAP ScrollSmoother
+						setTimeout(() => {
+							// Событие для инициализации GSAP после загрузки
+							window.dispatchEvent(new CustomEvent('preloaderComplete'));
+
+							// Удаляем прелоадер
+							setTimeout(() => {
+								preloader.remove();
+								preloaderContainer.remove();
+							}, 100);
+						}, 500);
+					}
+				} else {
+					preloaderContainer.remove();
+					// Если нет изображений, сразу запускаем событие
+					setTimeout(() => {
+						window.dispatchEvent(new CustomEvent('preloaderComplete'));
+					}, 100);
+				}
+			}
+
+			preloader();
+		</script>
+	</div>
+	<script src="js/app.min.js?_v=20250621144820"></script>
+</body>
+
+</html>
