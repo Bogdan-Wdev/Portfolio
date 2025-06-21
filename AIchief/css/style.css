@@ -1563,7 +1563,9 @@ h6 {
   .section__title._watcher-view::before {
     -webkit-transform: rotate(0) translate(0) scale(1);
     transform: rotate(0) translate(0) scale(1);
-    bottom: -25%
+    top: auto;
+    bottom: -25%;
+    right: 0
   }
 }
 @media (max-width:36.25em) {
@@ -1573,7 +1575,7 @@ h6 {
 }
 @media (max-width:31.25em) {
   .text__slider .swiper-pagination {
-    top: 20%
+    display: none
   }
 }
 @media (min-width:20em)and (max-width:104.375em) {
