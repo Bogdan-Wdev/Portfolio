@@ -1564,8 +1564,7 @@ h6 {
     -webkit-transform: rotate(0) translate(0) scale(1);
     transform: rotate(0) translate(0) scale(1);
     top: auto;
-    bottom: -25%;
-    right: 0
+    bottom: -25%
   }
 }
 @media (max-width:36.25em) {
